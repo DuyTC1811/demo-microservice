@@ -12,7 +12,7 @@ import java.util.List;
 public class EmployeeController {
     private static final Logger LOGGER = LoggerFactory.getLogger(EmployeeController.class);
 
-    private EmployeeRepository repository;
+    private final EmployeeRepository repository;
 
     public EmployeeController(EmployeeRepository repository) {
         this.repository = repository;
